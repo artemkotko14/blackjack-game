@@ -1,0 +1,199 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  background-image: url("images/table.png");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.container {
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.container-red {
+  background-color: rgb(180, 3, 3, 0.9);
+}
+#start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#start-img {
+  width: 25rem;
+  border-radius: 5px;
+}
+h1 {
+  color: goldenrod;
+  font-size: 2.4rem;
+}
+#name-input,
+#start-btn {
+  width: 75%;
+}
+#name-input {
+  padding: 0.2rem 0.5rem;
+}
+#message-el {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #f8f4e3;
+}
+
+button {
+  color: rgb(1, 65, 1);
+  width: 150px;
+  background: goldenrod;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+#start-game-btn {
+  margin-top: 0.5rem;
+}
+.cards-images {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.card {
+  width: 7rem;
+}
+
+#deal-btn {
+  margin: 0.5rem auto 0;
+  width: 15rem;
+}
+#restart-btn {
+  display: none;
+  margin: 0.5rem auto 0;
+  width: 15rem;
+}
+#game-screen {
+  display: none;
+}
+.player-options {
+  display: none;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-centered {
+  margin: 0 auto;
+  width: 15rem;
+}
+
+#player-cards {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+#dealer-cards {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 5rem;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  #message-el {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  #player-cards,
+  #dealer-cards {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .cards-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container {
+    padding: 0.8rem 1.2rem;
+  }
+}
