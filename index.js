@@ -31,6 +31,7 @@ let dealerSum = 0;
 let message = "";
 
 startBtn.addEventListener("click", function () {
+  preloadImages();
   let playerName = nameInput.value.trim();
   if (playerName !== "") {
     player.name = playerName;
@@ -243,5 +244,13 @@ standBtn.addEventListener("click", function () {
     updateBalance();
   }
 });
+
+function preloadImages() {
+  stackOfCards.forEach((card) => {
+    const img = new Image();
+    img.src = card.image;
+  });
+}
+
 dealBtn.addEventListener("click", dealCards);
 hitBtn.addEventListener("click", newCard);

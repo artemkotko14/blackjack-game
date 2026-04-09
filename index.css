@@ -196,4 +196,8 @@ p {
   .container {
     padding: 0.8rem 1.2rem;
   }
+  #hit-btn,
+  #stand-btn {
+    font-size: 0.9rem;
+  }
 }
