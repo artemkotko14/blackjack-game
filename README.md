@@ -12,14 +12,14 @@ This task was completed as part of the [Scrimba The Fullstack Developer Path](ht
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./images/screenshot.png)
 
 ---
 
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [Webpage]()
+- Solution URL: [GitHub](https://github.com/artemkotko14/blackjack-game)
+- Live Site URL: [Webpage](https://artemkotko14.github.io/blackjack-game/)
 
 ---
 
