@@ -23,6 +23,62 @@ This task was completed as part of the [Scrimba The Fullstack Developer Path](ht
 
 ---
 
+## How to Play
+
+These are the exact rules implemented in this version of Blackjack:
+
+### Objective
+
+The goal is to get a hand value as close to 21 as possible without going over.
+
+### Card Values
+
+- Number cards (2–10) are worth their face value
+- Face cards (Jack, Queen, King) are worth 10
+- Ace counts as 11 by default, but automatically becomes 1 if the total exceeds 21
+
+### Game Start
+
+- The player enters their name and starts the game
+- Both player and dealer receive two cards
+- The dealer shows one card, while the other remains hidden
+
+### Player Actions
+
+- Hit → Draw a new card
+- Stand → End turn and reveal dealer’s cards
+
+### Player Outcomes
+
+- If total is less than 21 → player can continue
+- If total is exactly 21 with 2 cards → Blackjack
+  Player instantly wins +100 chips
+- If total is 21 with more than 2 cards → must stand
+- If total is over 21 → player loses −50 chips
+
+### Dealer Rules
+
+- Dealer reveals hidden card after player stands
+- Dealer continues drawing cards while total is less than 17
+- Dealer stops at 17 or higher
+
+### Round Results
+
+- Dealer busts (>21) → player wins +50 chips
+- Dealer has higher total → player loses −50 chips
+- Player has higher total → player wins +50 chips
+- Equal totals → tie (no chips lost or gained)
+- If dealer gets Blackjack (21 with 2 cards) → player loses −50 chips
+
+### Game Over
+
+If player’s chips reach 0 or below:
+
+- Game ends
+- Player must restart
+
+---
+
 ## Features
 
 - Start game with player name input
